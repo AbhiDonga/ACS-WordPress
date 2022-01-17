@@ -1,0 +1,31 @@
+2022-01-04T06:58:22+00:00 CRITICAL Uncaught TypeError: Elementor\TemplateLibrary\Source_Local::on_save_post(): Argument #2 ($post) must be of type WP_Post, null given, called in C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php on line 305 and defined in C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\template-library\sources\local.php:1042
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(305): Elementor\TemplateLibrary\Source_Local->on_save_post(2834, NULL)
+#1 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\ACS\wp-includes\post.php(4468): do_action('save_post', 2834, NULL, true)
+#4 C:\xampp\htdocs\ACS\wp-includes\post.php(4570): wp_insert_post(Array, false, true)
+#5 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\db.php(235): wp_update_post(Array)
+#6 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\base\document.php(1099): Elementor\DB->save_plain_text(2834)
+#7 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\base\document.php(663): Elementor\Core\Base\Document->save_elements(Array)
+#8 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\documents-manager.php(527): Elementor\Core\Base\Document->save(Array)
+#9 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#10 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#11 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#12 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#13 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\ACS\wp-admin\admin-ajax.php(187): do_action('wp_ajax_element...')
+#15 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\template-library\sources\local.php on line 1042
+
+2022-01-04T09:42:58+00:00 CRITICAL Uncaught Error: Class "UniteCreatorElementorWidget" not found in C:\xampp\htdocs\ACS\wp-content\plugins\unlimited-elements-for-elementor-premium\provider\core\plugins\unlimited_elements\elementor\elementor_layout_exporter.class.php:1049
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-content\plugins\unlimited-elements-for-elementor-premium\provider\core\plugins\unlimited_elements\elementor\elementor_layout_exporter.class.php(1181): UniteCreatorLayoutsExporterElementor->exportElementorLayoutZip(Array, 'default-kit-ele...', false)
+#1 C:\xampp\htdocs\ACS\wp-content\plugins\unlimited-elements-for-elementor-premium\provider\core\plugins\unlimited_elements\elementor\elementor_integrate.class.php(1348): UniteCreatorLayoutsExporterElementor->exportElementorPost(1020)
+#2 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): UniteCreatorElementorIntegrate->onAjaxExportTemplate('')
+#3 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\ACS\wp-admin\admin-ajax.php(187): do_action('wp_ajax_unitecr...')
+#6 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\unlimited-elements-for-elementor-premium\provider\core\plugins\unlimited_elements\elementor\elementor_layout_exporter.class.php on line 1049
+

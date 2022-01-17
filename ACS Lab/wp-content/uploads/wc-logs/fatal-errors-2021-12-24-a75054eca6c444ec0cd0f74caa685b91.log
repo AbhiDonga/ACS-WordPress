@@ -1,0 +1,17 @@
+2021-12-24T04:49:13+00:00 CRITICAL Uncaught Error: Attempt to assign property "section" on null in C:\xampp\htdocs\ACS\wp-content\themes\oceanwp\inc\woocommerce\woocommerce-config.php:303
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): OceanWP_WooCommerce_Config::woo_section(Object(WP_Customize_Manager))
+#1 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\ACS\wp-includes\class-wp-customize-manager.php(933): do_action('customize_regis...', Object(WP_Customize_Manager))
+#4 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): WP_Customize_Manager->wp_loaded('')
+#5 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\ACS\wp-settings.php(600): do_action('wp_loaded')
+#8 C:\xampp\htdocs\ACS\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\ACS\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\ACS\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ACS\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\themes\oceanwp\inc\woocommerce\woocommerce-config.php on line 303
+

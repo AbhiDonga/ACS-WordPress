@@ -1,0 +1,49 @@
+2021-12-31T04:49:22+00:00 CRITICAL Uncaught Error: Call to a member function enqueue_styles() on null in C:\xampp\htdocs\ACS\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php:385
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): Header_Footer_Elementor->enqueue_scripts('')
+#1 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\ACS\wp-includes\script-loader.php(2083): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\ACS\wp-includes\class-wp-customize-manager.php(454): wp_enqueue_scripts()
+#5 C:\xampp\htdocs\ACS\wp-includes\class-wp-customize-manager.php(551): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): WP_Customize_Manager->setup_theme('')
+#7 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ACS\wp-settings.php(510): do_action('setup_theme')
+#10 C:\xampp\htdocs\ACS\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ACS\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\ACS\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\ACS\index.php(17): require('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php on line 385
+
+2021-12-31T12:21:32+00:00 CRITICAL Uncaught InvalidArgumentException: Unidentified action 181 in C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:535
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ListTable.php(478): ActionScheduler_DBStore->delete_action('181')
+#1 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_ListTable.php(152): ActionScheduler_ListTable->bulk_delete(Array, '('181','209','1...')
+#2 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_ListTable.php(644): ActionScheduler_Abstract_ListTable->process_bulk_action()
+#3 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AdminView.php(107): ActionScheduler_Abstract_ListTable->process_actions()
+#4 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AdminView.php(88): ActionScheduler_AdminView->get_list_table()
+#5 C:\xampp\htdocs\ACS\wp-content\plugins\wp-mail-smtp\src\Admin\Pages\ActionSchedulerTab.php(86): ActionScheduler_AdminView->process_admin_ui()
+#6 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): WPMailSMTP\Admin\Pages\ActionSchedulerTab->init('')
+#7 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ACS\wp-admin\admin.php(175): do_action('admin_init')
+#10 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 535
+
+2021-12-31T12:22:28+00:00 CRITICAL Uncaught InvalidArgumentException: Unidentified action 181 in C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:535
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ListTable.php(478): ActionScheduler_DBStore->delete_action('181')
+#1 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_ListTable.php(152): ActionScheduler_ListTable->bulk_delete(Array, '('181','209','1...')
+#2 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_ListTable.php(644): ActionScheduler_Abstract_ListTable->process_bulk_action()
+#3 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AdminView.php(107): ActionScheduler_Abstract_ListTable->process_actions()
+#4 C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AdminView.php(88): ActionScheduler_AdminView->get_list_table()
+#5 C:\xampp\htdocs\ACS\wp-content\plugins\wp-mail-smtp\src\Admin\Pages\ActionSchedulerTab.php(86): ActionScheduler_AdminView->process_admin_ui()
+#6 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): WPMailSMTP\Admin\Pages\ActionSchedulerTab->init('')
+#7 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\ACS\wp-admin\admin.php(175): do_action('admin_init')
+#10 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 535
+

@@ -1,0 +1,16 @@
+2021-12-22T12:03:57+00:00 CRITICAL Uncaught Error: Call to undefined function wppb_user_listing_shortcode() in C:\xampp\htdocs\ACS\wp-content\plugins\profile-builder\assets\misc\elementor\widgets\class-pb-widget-base.php:330
+Stack trace:
+#0 C:\xampp\htdocs\ACS\wp-content\plugins\profile-builder\assets\misc\elementor\widgets\class-pb-widget-ul.php(188): PB_Elementor_Widget->render_widget('ul')
+#1 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\base\controls-stack.php(2154): PB_Elementor_User_Listing_Widget->render()
+#2 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\base\widget-base.php(581): Elementor\Controls_Stack->render_by_mode()
+#3 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\base\document.php(271): Elementor\Widget_Base->render_content()
+#4 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\includes\managers\widgets.php(323): Elementor\Core\Base\Document->render_element(Array)
+#5 [internal function]: Elementor\Widgets_Manager->ajax_render_widget(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\xampp\htdocs\ACS\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#7 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(303): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#8 C:\xampp\htdocs\ACS\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 C:\xampp\htdocs\ACS\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\ACS\wp-admin\admin-ajax.php(187): do_action('wp_ajax_element...')
+#11 {main}
+  thrown in C:\xampp\htdocs\ACS\wp-content\plugins\profile-builder\assets\misc\elementor\widgets\class-pb-widget-base.php on line 330
+
